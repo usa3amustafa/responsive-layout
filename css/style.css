@@ -38,6 +38,14 @@ a {
   font-size: 1.1rem;
 }
 
+nav {
+  display: none;
+}
+
+.show-nav {
+  display: block;
+}
+
 .navigation {
   background-color: #fff;
 }
@@ -71,7 +79,10 @@ a {
 
 .navigation nav {
   text-align: center;
-  display: none;
+}
+
+.navigation nav li {
+  padding: 0.3em;
 }
 
 .hero {
