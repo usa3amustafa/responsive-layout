@@ -15,8 +15,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f2f2f2;
   color: $fontColorPri;
-  //   width: 580px;
-  //   margin: auto;
 }
 // utilities
 ul {
@@ -58,40 +56,48 @@ a {
 
 .hero {
   text-align: center;
-  .left-col {
-    padding: 6em 0 3em 0;
-    width: 70%;
+  .container {
+    width: 95%;
     margin: auto;
-    p {
-      text-transform: uppercase;
-      letter-spacing: 0.35em;
-    }
-    h1 {
-      font-size: 2.5rem;
-      line-height: 1.3em;
-      margin: 0.3em 0 1em 0;
-      color: #000;
-    }
-    .btns {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2em;
-      .cta-pri {
-        padding: 1em 3em;
-        background-color: $priColor;
-        border-radius: 5em;
-        font-weight: bold;
-        color: #f2f2f2;
-        text-transform: capitalize;
+    .left-col {
+      padding: 6em 0 3em 0;
+      width: 70%;
+      margin: auto;
+      p {
+        text-transform: uppercase;
+        letter-spacing: 0.35em;
       }
-      .cta-sec {
-        text-decoration: underline;
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.3em;
+        margin: 0.3em 0 1em 0;
+        color: #000;
+      }
+      .btns {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        gap: 0.2em;
+        gap: 1em;
+        .cta-pri {
+          padding: 1em 3em;
+          background-color: $priColor;
+          border-radius: 5em;
+          font-weight: bold;
+          color: #f2f2f2;
+          text-transform: capitalize;
+        }
+        .cta-sec {
+          text-decoration: underline;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.2em;
+        }
       }
+    }
+    .right-col {
+      width: 90%;
+      margin: auto;
     }
   }
 }

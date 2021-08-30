@@ -66,25 +66,30 @@ a {
   text-align: center;
 }
 
-.hero .left-col {
+.hero .container {
+  width: 95%;
+  margin: auto;
+}
+
+.hero .container .left-col {
   padding: 6em 0 3em 0;
   width: 70%;
   margin: auto;
 }
 
-.hero .left-col p {
+.hero .container .left-col p {
   text-transform: uppercase;
   letter-spacing: 0.35em;
 }
 
-.hero .left-col h1 {
+.hero .container .left-col h1 {
   font-size: 2.5rem;
   line-height: 1.3em;
   margin: 0.3em 0 1em 0;
   color: #000;
 }
 
-.hero .left-col .btns {
+.hero .container .left-col .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,10 +100,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
 
-.hero .left-col .btns .cta-pri {
+.hero .container .left-col .btns .cta-pri {
   padding: 1em 3em;
   background-color: #219ebc;
   border-radius: 5em;
@@ -107,7 +112,7 @@ a {
   text-transform: capitalize;
 }
 
-.hero .left-col .btns .cta-sec {
+.hero .container .left-col .btns .cta-sec {
   text-decoration: underline;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,5 +124,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.2em;
+}
+
+.hero .container .right-col {
+  width: 90%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
