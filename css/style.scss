@@ -56,48 +56,44 @@ a {
 
 .hero {
   text-align: center;
-  .container {
-    width: 95%;
+  .left-col {
+    padding: 6em 0 3em 0;
+    width: 70%;
     margin: auto;
-    .left-col {
-      padding: 6em 0 3em 0;
-      width: 70%;
-      margin: auto;
-      p {
-        text-transform: uppercase;
-        letter-spacing: 0.35em;
+    p {
+      text-transform: uppercase;
+      letter-spacing: 0.35em;
+    }
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.3em;
+      margin: 0.3em 0 1em 0;
+      color: #000;
+    }
+    .btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      .cta-pri {
+        padding: 1em 3em;
+        background-color: $priColor;
+        border-radius: 5em;
+        font-weight: bold;
+        color: #f2f2f2;
+        text-transform: capitalize;
       }
-      h1 {
-        font-size: 2.5rem;
-        line-height: 1.3em;
-        margin: 0.3em 0 1em 0;
-        color: #000;
-      }
-      .btns {
+      .cta-sec {
+        text-decoration: underline;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 1em;
-        .cta-pri {
-          padding: 1em 3em;
-          background-color: $priColor;
-          border-radius: 5em;
-          font-weight: bold;
-          color: #f2f2f2;
-          text-transform: capitalize;
-        }
-        .cta-sec {
-          text-decoration: underline;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 0.2em;
-        }
+        gap: 0.2em;
       }
     }
-    .right-col {
-      width: 90%;
-      margin: auto;
-    }
+  }
+  .right-col {
+    width: 90%;
+    margin: auto;
   }
 }
