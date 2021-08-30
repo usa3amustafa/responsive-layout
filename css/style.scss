@@ -15,8 +15,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f2f2f2;
   color: $fontColorPri;
-  width: 580px;
-  margin: auto;
+  //   width: 580px;
+  //   margin: auto;
 }
 // utilities
 ul {
@@ -76,7 +76,7 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1em;
+      gap: 2em;
       .cta-pri {
         padding: 1em 3em;
         background-color: $priColor;
