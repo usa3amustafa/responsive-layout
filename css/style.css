@@ -93,7 +93,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1em;
 }
 
 .hero .left-col .btns .cta-pri {
@@ -103,6 +102,7 @@ a {
   font-weight: bold;
   color: #f2f2f2;
   text-transform: capitalize;
+  margin-bottom: 1em;
 }
 
 .hero .left-col .btns .cta-sec {
@@ -116,7 +116,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.2em;
+}
+
+.hero .left-col .btns .cta-sec img {
+  margin-right: 0.3em;
 }
 
 .hero .right-col img {
