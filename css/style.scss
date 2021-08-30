@@ -25,6 +25,7 @@ body {
 .container {
   width: 95%;
   margin: auto;
+  max-width: 1188px;
 }
 ul {
   list-style-type: none;
@@ -157,12 +158,14 @@ a {
 
   ul {
     text-align: center;
+    padding-top: 2em;
     li {
       background-color: $darkBlue;
       padding: 1em 1em;
       width: 85%;
       margin: 0 auto 5em auto;
       border-radius: 1em;
+
       img {
         width: 7em;
         height: 7em;
@@ -175,7 +178,7 @@ a {
       }
     }
     li:last-child {
-      margin-bottom: 0;
+      margin: 0 auto 0 auto;
     }
   }
 }
@@ -214,3 +217,86 @@ a {
     }
   }
 }
+
+//media queries start
+@media screen and (min-width: 1060px) {
+  // utilities start
+  .container {
+    width: 90%;
+  }
+  // utilities end
+
+  // navigation start
+  .navigation {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .top-bar {
+        #menu-icon {
+          display: none;
+        }
+      }
+      nav {
+        display: flex;
+        gap: 15em;
+
+        ul {
+          display: flex;
+          gap: 2em;
+          .btn-cta {
+            color: $fontColorSec;
+            font-weight: bold;
+            border: 3px solid $fontColorSec;
+            border-radius: 2em;
+            padding: 0.5em 1em;
+          }
+        }
+      }
+    }
+  }
+  // navigation end
+
+  // hero start
+  .hero {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left-col {
+        flex: 1;
+      }
+      .right-col {
+        flex: 1;
+      }
+    }
+  }
+  // hero end
+
+  // features start
+  .features {
+    position: relative;
+    img {
+      display: block;
+      width: 25%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-bottom: -20px;
+    }
+  }
+  // features end
+
+  //testimonials-start
+  .testimonials-section {
+    ul {
+      display: flex;
+      gap: 2em;
+      li {
+        margin: 0;
+      }
+    }
+  }
+  //testimonials-end
+}
+//media queries end

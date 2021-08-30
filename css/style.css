@@ -15,6 +15,7 @@ body {
 .container {
   width: 95%;
   margin: auto;
+  max-width: 1188px;
 }
 
 ul {
@@ -176,6 +177,7 @@ a {
 
 .testimonials-section ul {
   text-align: center;
+  padding-top: 2em;
 }
 
 .testimonials-section ul li {
@@ -199,7 +201,7 @@ a {
 }
 
 .testimonials-section ul li:last-child {
-  margin-bottom: 0;
+  margin: 0 auto 0 auto;
 }
 
 .contact {
@@ -237,5 +239,85 @@ a {
   width: 100%;
   height: 500px;
   margin: auto;
+}
+
+@media screen and (min-width: 1060px) {
+  .container {
+    width: 90%;
+  }
+  .navigation .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation .container .top-bar #menu-icon {
+    display: none;
+  }
+  .navigation .container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15em;
+  }
+  .navigation .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+  .navigation .container nav ul .btn-cta {
+    color: #007af3;
+    font-weight: bold;
+    border: 3px solid #007af3;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .container .left-col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .hero .container .right-col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .features {
+    position: relative;
+  }
+  .features img {
+    display: block;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -20px;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+  .testimonials-section ul li {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
