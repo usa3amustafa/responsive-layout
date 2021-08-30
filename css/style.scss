@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-// variables
+// variables start
 $fontColorPri: #333;
 $fontColorSec: #219ebc;
 $priColor: #219ebc;
 $secColor: #333;
+$grey-white: #f2f2f2;
+$white: #fff;
+$black: #000;
+//variables end
+
+// utilities
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +18,9 @@ $secColor: #333;
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f2f2f2;
+  background-color: $grey-white;
   color: $fontColorPri;
 }
-// utilities
 ul {
   list-style-type: none;
 }
@@ -23,9 +28,11 @@ a {
   text-decoration: none;
   color: $fontColorPri;
 }
+// utilities end
 
+// navigation start
 .navigation {
-  background-color: #fff;
+  background-color: $white;
   .container {
     width: 95%;
     margin: auto;
@@ -53,6 +60,7 @@ a {
   }
 }
 
+// hero start
 .hero {
   text-align: center;
   .left-col {
@@ -65,7 +73,7 @@ a {
       font-size: 2.5rem;
       line-height: 1.3em;
       margin: 0.3em 0 1em 0;
-      color: #000;
+      color: $black;
     }
     .btns {
       display: flex;
@@ -76,17 +84,21 @@ a {
         background-color: $priColor;
         border-radius: 5em;
         font-weight: bold;
-        color: #f2f2f2;
+        color: $grey-white;
         text-transform: capitalize;
         margin-bottom: 1em;
       }
       .cta-sec {
-        text-decoration: underline;
         display: flex;
         justify-content: center;
         align-items: center;
-        img {
+        .video-icon {
           margin-right: 0.3em;
+          font-size: 1rem;
+          text-decoration: none;
+        }
+        span {
+          text-decoration: underline;
         }
       }
     }
@@ -96,4 +108,38 @@ a {
       width: 70%;
     }
   }
+}
+// hero end
+
+// feartures start
+.features {
+  background-color: $secColor;
+  padding: 5em 2em;
+  .container {
+    width: 95%;
+    margin: auto;
+    li {
+      color: $grey-white;
+      font-size: 1.1rem;
+      margin-bottom: 1em;
+      margin-left: 2em;
+      position: relative;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    li::before {
+      content: '';
+      left: -2em;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url(../images/bullet.svg);
+      background-size: contain;
+      margin-right: 0.5em;
+    }
+  }
+}
+img {
+  display: none;
 }
