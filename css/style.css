@@ -68,8 +68,6 @@ a {
 
 .hero .left-col {
   padding: 6em 0 3em 0;
-  width: 70%;
-  margin: auto;
 }
 
 .hero .left-col p {
@@ -121,8 +119,7 @@ a {
   gap: 0.2em;
 }
 
-.hero .right-col {
-  width: 90%;
-  margin: auto;
+.hero .right-col img {
+  padding: 0 2em;
 }
 /*# sourceMappingURL=style.css.map */
