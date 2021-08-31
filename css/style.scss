@@ -81,6 +81,9 @@ nav {
     text-align: center;
     li {
       padding: 0.3em;
+      a {
+        text-transform: capitalize;
+      }
     }
   }
 }
