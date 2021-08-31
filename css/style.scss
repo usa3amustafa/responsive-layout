@@ -45,11 +45,16 @@ a {
   font-size: 1.1rem;
 }
 nav {
-  display: none;
+  // display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .show-nav {
-  display: block;
+  // display: block;
+  height: 11rem;
 }
+
 // utilities end
 
 // navigation start
@@ -245,6 +250,7 @@ nav {
         }
       }
       nav {
+        height: auto;
         display: flex;
         gap: 15em;
 
@@ -254,9 +260,9 @@ nav {
           .btn-cta {
             color: $fontColorSec;
             font-weight: bold;
-            border: 3px solid $fontColorSec;
+            border: 2px solid $fontColorSec;
             border-radius: 2em;
-            padding: 0.5em 1em;
+            padding: 0.2em 1em;
           }
         }
       }

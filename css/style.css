@@ -39,11 +39,14 @@ a {
 }
 
 nav {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .show-nav {
-  display: block;
+  height: 11rem;
 }
 
 .navigation {
@@ -271,6 +274,7 @@ nav {
     display: none;
   }
   .navigation .container nav {
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -285,9 +289,9 @@ nav {
   .navigation .container nav ul .btn-cta {
     color: #007af3;
     font-weight: bold;
-    border: 3px solid #007af3;
+    border: 2px solid #007af3;
     border-radius: 2em;
-    padding: 0.5em 1em;
+    padding: 0.2em 1em;
   }
   .hero .container {
     display: -webkit-box;
